@@ -1,0 +1,84 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore">
+  <expression:EMFExpression id="null=>row6=>id" expression="Relational.NOT(Relational.ISNULL(row2.category_ids))?Integer.parseInt(row2.category_ids):-1">
+    <variables name="row2.factual_id" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address_extended" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.po_box" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.locality" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.post_town" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.admin_region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.postcode" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.country" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.tel" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.fax" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.latitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.longitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.neighborhood" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.website" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.email" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_ids" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_labels" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.status" value="null" talendType="id_Integer" nullable="true"/>
+    <variables name="row2.chain_name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.chain_id" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.slug" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row6.id" value="null" talendType="id_Integer" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>out=>enabled" expression="row2.status!=0?true:false ">
+    <variables name="row2.factual_id" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address_extended" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.po_box" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.locality" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.post_town" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.admin_region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.postcode" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.country" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.tel" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.fax" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.latitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.longitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.neighborhood" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.website" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.email" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_ids" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_labels" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.status" value="null" talendType="id_Integer" nullable="true"/>
+    <variables name="row2.chain_name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.chain_id" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.slug" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row6.id" value="null" talendType="id_Integer" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>out=>id" expression="row2.factual_id">
+    <variables name="row2.factual_id" value="null" talendType="id_Object" nullable="true"/>
+    <variables name="row2.name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.address_extended" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.po_box" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.locality" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.post_town" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.admin_region" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.postcode" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.country" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.tel" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.fax" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.latitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.longitude" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.neighborhood" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.website" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.email" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_ids" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.category_labels" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.status" value="null" talendType="id_Integer" nullable="true"/>
+    <variables name="row2.chain_name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.chain_id" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row2.slug" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row6.id" value="null" talendType="id_Integer" nullable="true"/>
+  </expression:EMFExpression>
+</xmi:XMI>

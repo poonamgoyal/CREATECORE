@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="agent_count" prompt="agent_count?" promptNeeded="false" type="id_Integer" value="6"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="32"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-Win32-r111943-V5.4.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_91ldICLaEeK648vNx8-Ucw" name="DataOperation"/>
+    <routinesParameter id="_91n5YCLaEeK648vNx8-Ucw" name="Mathematical"/>
+    <routinesParameter id="_91q8sCLaEeK648vNx8-Ucw" name="Numeric"/>
+    <routinesParameter id="_91VlgCLaEeK648vNx8-Ucw" name="Relational"/>
+    <routinesParameter id="_91hywCLaEeK648vNx8-Ucw" name="StringHandling"/>
+    <routinesParameter id="_91uAACLaEeK648vNx8-Ucw" name="TalendDataGenerator"/>
+    <routinesParameter id="_91bFECLaEeK648vNx8-Ucw" name="TalendDate"/>
+    <routinesParameter id="_91G8ACLaEeK648vNx8-Ucw" name="TalendString"/>
+    <routinesParameter id="_pavBIIIxEeC0d75YjXvflg" name="AEGIII"/>
+    <routinesParameter id="_f7J3ILqVEd-9HP34p13A6g" name="AEGI"/>
+    <routinesParameter id="_m3nG0CWcEeCQBNnoDdSX5A" name="CCCBR"/>
+    <routinesParameter id="_uqDT4L_MEd-bIZ59KAvnNw" name="CDB"/>
+    <routinesParameter id="_8uNKIGWCEd-uOodtmkACcA" name="COMMON"/>
+    <routinesParameter id="_FMmj8PDIEeGKcpRUU889Fw" name="Convert"/>
+    <routinesParameter id="_A7C7gELqEeGhOZCgYTHogg" name="ErrorBase"/>
+    <routinesParameter id="_K7GgoELpEeGhOZCgYTHogg" name="Errors"/>
+    <routinesParameter id="_ETbU0AIgEeC-z-2JwcQiVA" name="FEATURE"/>
+    <routinesParameter id="_prntwHcMEd-JrvRwXvCCxA" name="FNAIM"/>
+    <routinesParameter id="_jBiR0J4QEd--DcyuruA6jg" name="FUNDA"/>
+    <routinesParameter id="_yMWxsPC9EeGKcpRUU889Fw" name="FeatureRegEx"/>
+    <routinesParameter id="_p_KvMA5IEeKvtbHVTggKBA" name="Format"/>
+    <routinesParameter id="_ivNxoE8SEd-4it3Sw4XIFA" name="GEO"/>
+    <routinesParameter id="_FvHscLO5EeCCyOs-_c2rMQ" name="HTML"/>
+    <routinesParameter id="_vsT-4KtFEeGJJPR_hb_WGA" name="HYLND"/>
+    <routinesParameter id="_5rZHsFnBEd-NnvJ5GLnapw" name="IMG"/>
+    <routinesParameter id="_gtI7EGTdEd-uOodtmkACcA" name="IMMONET"/>
+    <routinesParameter id="_3o0O0M5AEeCmYcBfLU_jOA" name="INTERO"/>
+    <routinesParameter id="_XBMRoEEyEeK4MrQxdoSU9w" name="KEYES"/>
+    <routinesParameter id="_wzrlsEwFEeG0lsCSeFvTEQ" name="LIVENET"/>
+    <routinesParameter id="_PL64wPBEEeGvecgfZ-FHvQ" name="LargeXML"/>
+    <routinesParameter id="_DR4LIE3OEeGhn6UTZ4MGAQ" name="MasterData"/>
+    <routinesParameter id="_PEJDgA2VEeKvtbHVTggKBA" name="NCIUH"/>
+    <routinesParameter id="_3hXBsAk1EeGapO8xtrfgRA" name="OCEANB"/>
+    <routinesParameter id="_ar2GwN12EeCF9-lLj9Qbpw" name="OCEAN"/>
+    <routinesParameter id="_qWvZUIWeEeG2Gcd3YfEGNQ" name="OceanReef"/>
+    <routinesParameter id="_Pgih0GdyEd-L0vAa9M0eeg" name="PLIVE"/>
+    <routinesParameter id="_KpZXcHG1EeCCQau9a5mLig" name="POINT2"/>
+    <routinesParameter id="_dSljwFv4EeKfxqkGiPJ0Qg" name="PRUDENTIAL"/>
+    <routinesParameter id="_W7G3EPi0EeCOvfAZgZz2JQ" name="PX3"/>
+    <routinesParameter id="_Nje70L2AEd-WerEOfQqOyw" name="PX"/>
+    <routinesParameter id="_xOP9kJh_EeGL3vZBZ5zPFw" name="RAGFL"/>
+    <routinesParameter id="_E50O0IK_EeGlCJv1J5UeVQ" name="RedeSecoviCMS"/>
+    <routinesParameter id="_DP-xEEQzEeGduPqWSbuS8Q" name="RedeSecovi"/>
+    <routinesParameter id="_-Y5CkM6PEeCAvsOG-rkC9Q" name="SECOVIA"/>
+    <routinesParameter id="_2zckoG_bEeCcPrGxNFtFfQ" name="SEC"/>
+    <routinesParameter id="_LEqjEFRQEd-OboX3PL8QHQ" name="STAT"/>
+    <routinesParameter id="_vaMSMLuuEeGhZ-f_9Jcm6Q" name="Validate"/>
+    <routinesParameter id="_ERXzUE8LEd-4it3Sw4XIFA" name="WEB"/>
+    <routinesParameter id="_ympbwEhsEd-tr6mFoxnEqA" name="WPParam"/>
+    <routinesParameter id="_kjO4sA30EeGGRLoIdg7-zQ" name="XSLT"/>
+  </parameters>
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;http://api.realestate.co.nz/1/agents/?api_key=19a30f98-89fb-492e-ab95-ce3fdb721a34&amp;api_sig=9578263fd504ddcc1a6ed5328bc8d753&amp;format=full&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value=""/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" value=""/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
+    <elementParameter field="TEXT" name="USR" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PWD" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tHttpRequest_1">
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractRegexFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractRegexFields_1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="ResponseContent"/>
+    <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#xA;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#xA;&#x9;  "/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;\&quot;count\&quot;:([0-9]+)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tExtractRegexFields_1">
+      <column comment="" key="false" name="count" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="count" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;if(Relational.NOT(Relational.ISNULL(input_row.count)))&#xA;{&#xA;context.agent_count=(input_row.count/1000)+1;&#xA;System.out.println((input_row.count/1000)+1);&#xA;}&#xA;else&#xA;context.agent_count=1;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="true"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
+    <elementParameter field="TEXT" name="FROM" value="0"/>
+    <elementParameter field="TEXT" name="TO" value="context.agent_count-1"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="&quot;int i=0&quot;"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;i&lt;10&quot;"/>
+    <elementParameter field="TEXT" name="ITERATION" value="&quot;i++&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="tLoop_Agents"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="String url_constant = &quot;http://api.realestate.co.nz/1/agents/?api_key=19a30f98-89fb-492e-ab95-ce3fdb721a34&amp;api_sig=&quot;;&#xA;Integer offset = 1000*((Integer)globalMap.get(&quot;tLoop_1_CURRENT_ITERATION&quot;)-1);// Numeric.sequence(&quot;Loop&quot;, 0, 1);&#xA;String api_sig= &quot;1aeb3237-c69c-48ed-b950-1f29a594cf19/1/agents/formatfullmax_results1000offset&quot;+offset; &#xA;String md5_api_sig = COMMON.md5(api_sig);&#xA;row3.URI=url_constant+md5_api_sig+&quot;&amp;format=full&amp;max_results=1000&amp;offset=&quot;+offset;&#xA;System.out.println(offset+&quot; ==== &quot;+row3.URI);&#xA;row3.offset = offset;&#xA;&#xA;&#xA;//86ad5391ca4379c375d527d384f705e4&amp;format=full&amp;max_results=1000&amp;offset=0&amp;sort_order=-listing_date"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaFlex_1">
+      <column comment="" key="false" name="URI" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" name="offset" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tFileFetch" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileFetch_1"/>
+    <elementParameter field="CLOSED_LIST" name="PROTO" value="http"/>
+    <elementParameter field="CHECK" name="POST" value="false"/>
+    <elementParameter field="TEXT" name="URI" value="((String)globalMap.get(&quot;row3.URI&quot;))"/>
+    <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/var/tmp/proxio/ftp/p3_nz&quot;"/>
+    <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
+    <elementParameter field="TEXT" name="FILENAME" value="&quot;agents_&quot;+((Integer)globalMap.get(&quot;row3.offset&quot;))"/>
+    <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMB_DOMAIN" value="&quot;domain&quot;"/>
+    <elementParameter field="TEXT" name="SMB_USERNAME" value="&quot;username&quot;"/>
+    <elementParameter field="TEXT" name="SMB_PASSWORD" value="&quot;password&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TABLE" name="COMMON_PARAMS"/>
+    <elementParameter field="CHECK" name="READ_COOKIE" value="false"/>
+    <elementParameter field="CHECK" name="SAVE_COOKIE" value="false"/>
+    <elementParameter field="DIRECTORY" name="COOKIE_DIR" value="&quot;C::/cookie&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COOKIE_POLICY" value="DEFAULT"/>
+    <elementParameter field="CHECK" name="SINGLE_COOKIE" value="false"/>
+    <elementParameter field="CHECK" name="PRINT" value="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="1000"/>
+    <elementParameter field="CHECK" name="UPLOAD" value="false"/>
+    <elementParameter field="TABLE" name="FILE_PARAMS"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;8080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PASSWORD" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROXY_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_DOMAIN" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;"/>
+    <elementParameter field="TEXT" name="AUTH_PASSWORD" value="&quot;password&quot;"/>
+    <elementParameter field="CHECK" name="REDIRECT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileFetch_1">
+      <column comment="" key="false" name="URI" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" name="offset" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+    </metadata>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="&quot;/var/tmp/proxio/ftp/p3_nz/agents.xml&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/var/tmp/proxio/ftp/p3_nz&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;agents_[0-9]+&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;@@&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value=""/>
+    <elementParameter field="TEXT" name="FOOTER" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileInputFullRow_1">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;&#xA;org.json.JSONObject o = new org.json.JSONObject(input_row.line);&#xA;//output_row.line = &quot;&lt;root>&quot; + org.json.XML.toString(o) + &quot;&lt;/root>&quot;;&#xA;output_row.line =  org.json.XML.toString(o).replaceAll(&quot;\b&quot;, &quot;&quot;);&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.json.*;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaRow_2">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/var/tmp/proxio/ftp/p3_nz/agents.xml&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/var/tmp/proxio/ftp/p3_nz/agents.xml&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/root/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/root/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#xA;&quot;File (or path) deleted.&quot;&#xA;&quot;No file (or path) deleted.&quot;&#xA;&quot;File (or path) does not exists or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/var/tmp/proxio/ftp/p3_nz/agents_1.xml&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;@@&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value=""/>
+    <elementParameter field="TEXT" name="FOOTER" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileInputFullRow_2">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;&#xA;//org.json.JSONObject o = new org.json.JSONObject(input_row.line);&#xA;//output_row.line = &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?>&quot;+&quot;&lt;root>&quot; + input_row.line + &quot;&lt;/root>&quot;;&#xA;output_row.line = &quot;&lt;root>&quot; + input_row.line + &quot;&lt;/root>&quot;;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.json.*;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/var/tmp/proxio/ftp/p3_nz/agents.xml&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;json-20090211.jar&quot;"/>
+    <elementParameter field="TABLE" name="HOTLIBS"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/root/workspace&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;sh /var/talend/add_root /var/tmp/proxio/ftp/p3_nz/agents.xml&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tSystem_1">
+      <column key="false" name="line" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA; for(int i=0;i&lt;context.agent_count-1;i++)&#xA; {     "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="row8.iteration=i;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="}&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaFlex_2">
+      <column comment="" key="false" name="iteration" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHttpRequest_1" offsetLabelX="0" offsetLabelY="0" source="tHttpRequest_1" target="tExtractRegexFields_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="ResponseContent"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHttpRequest_1" offsetLabelX="0" offsetLabelY="0" source="tHttpRequest_1" target="tLoop_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractRegexFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractRegexFields_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="count"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tFileExist_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tJavaFlex_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="URI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="offset"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFileFetch_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_1" target="tFileDelete_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="10" offsetLabelY="-13" outputId="2" source="tFileExist_1" target="tFileList_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputFullRow_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tSystem_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputFullRow_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_1" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="line"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputFullRow_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_2" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="line"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tLibraryLoad_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tJavaFlex_2" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_2" target="tFlowToIterate_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="iteration"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

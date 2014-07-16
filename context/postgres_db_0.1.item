@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="target_dir" prompt="target_dir?" promptNeeded="false" type="id_String" value="&quot;D:/Komuns/Data&quot;"/>
+    <contextParameter comment="" name="server" prompt="server?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_String" value="&quot;Global789&quot;"/>
+    <contextParameter comment="" name="db" prompt="db?" promptNeeded="false" type="id_String" value="&quot;komuns_data_dev&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="prod">
+    <contextParameter comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="target_dir" prompt="target_dir?" promptNeeded="false" type="id_String" value="&quot;/home:/komuns/data&quot;"/>
+    <contextParameter comment="" name="server" prompt="server?" promptNeeded="false" type="id_String" value="&quot;ccpgdev.c2awhoscra4x.us-east-1.rds.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" type="id_String" value="&quot;Irondev!1&quot;"/>
+    <contextParameter comment="" name="db" prompt="db?" promptNeeded="false" type="id_String" value="&quot;komuns_cmf_dev&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

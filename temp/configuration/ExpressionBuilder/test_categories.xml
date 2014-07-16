@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>row4=>id" expression="(Relational.NOT(Relational.ISNULL(row1.category_ids)) &amp;&amp; row1.category_ids.length()>0)?Integer.parseInt((row1.category_ids.replaceAll(&quot;\\[&quot;,&quot;&quot;).replaceAll(&quot;\\]&quot;,&quot;&quot;).replaceAll(&quot;\&quot;&quot;,&quot;&quot;).replaceAll(&quot;\&quot;&quot;,&quot;&quot;))):-1  ">
+  <variables name="row1.factual_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.address" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.address_extended" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.po_box" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.locality" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.region" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.post_town" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.admin_region" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.postcode" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.country" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.tel" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.fax" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.latitude" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="row1.longitude" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="row1.neighborhood" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.website" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.category_ids" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.category_labels" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.status" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.chain_name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.chain_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.id" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row4.category_path__" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.healthcare1" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.restaurants2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.hotels3" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.komuns" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.category" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.subcategory" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.Column8" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

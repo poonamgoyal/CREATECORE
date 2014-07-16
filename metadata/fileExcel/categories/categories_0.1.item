@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_qHztoAKgEeSjmrAHzhZN7g" name="categories" dataPackage="_qHztoQKgEeSjmrAHzhZN7g" Server="Localhost 127.0.0.1" FilePath="D:/Poonam Takkar/Everything/oDesk/CreateCore/category factual.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Hoja1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Hoja1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_qHztoQKgEeSjmrAHzhZN7g" name="default" dataManager="_qHztoAKgEeSjmrAHzhZN7g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_qHztogKgEeSjmrAHzhZN7g" id="_XVyZEAKgEeSjmrAHzhZN7g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztowKgEeSjmrAHzhZN7g" label="id" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="10"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztpAKgEeSjmrAHzhZN7g" label="category_path__" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="200"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztpQKgEeSjmrAHzhZN7g" label="healthcare1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztpgKgEeSjmrAHzhZN7g" label="restaurants2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztpwKgEeSjmrAHzhZN7g" label="hotels3" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="10"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztqAKgEeSjmrAHzhZN7g" label="komuns" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="10"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztqQKgEeSjmrAHzhZN7g" label="category" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="50"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztqgKgEeSjmrAHzhZN7g" label="subcategory" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="20"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qHztqwKgEeSjmrAHzhZN7g" label="Column8" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="200"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

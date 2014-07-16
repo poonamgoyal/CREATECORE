@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>row6=>id" expression="row8.category_ids">
+  <variables name="row8.factual_id" value="null" talendType="id_Object" nullable="true"/>
+  <variables name="row8.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.address" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.address_extended" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.po_box" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.locality" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.region" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.post_town" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.admin_region" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.postcode" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.country" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.tel" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.fax" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.latitude" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="row8.longitude" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="row8.neighborhood" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.website" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.category_ids" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row8.category_labels" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.status" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row8.chain_name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.chain_id" value="null" talendType="id_Object" nullable="true"/>
+  <variables name="row8.slug" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.id" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row6.komuns" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
